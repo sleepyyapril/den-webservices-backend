@@ -1,4 +1,4 @@
-namespace DenWebServices.Backend.Data;
+namespace DenWebServices.Backend.Database;
 
 [Flags]
 public enum PermissionFlags : uint

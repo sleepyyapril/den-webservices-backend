@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace DenWebServices.Backend.Data;
+namespace DenWebServices.Backend.Database;
 
 public class User
 {

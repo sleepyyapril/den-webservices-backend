@@ -1,9 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace DenWebServices.Backend.Data;
+namespace DenWebServices.Backend.Database;
 
-public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+public class AppDbContext : DbContext
 {
+    public AppDbContext(DbContextOptions<AppDbContext> options)
+        : base(options)
+    {
+    }
+    
     public DbSet<User> Users { get; set; } = null!;
     public DbSet<Rank> Ranks { get; set; } = null!;
     public DbSet<Admin> Admins { get; set; } = null!;

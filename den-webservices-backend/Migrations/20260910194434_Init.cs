@@ -157,7 +157,8 @@ namespace DenWebServices.Backend.Migrations
                         name: "FK_Punishments_Users_PunishingUserUniqueId",
                         column: x => x.PunishingUserUniqueId,
                         principalTable: "Users",
-                        principalColumn: "UniqueId");
+                        principalColumn: "UniqueId",
+                        onDelete: ReferentialAction.SetNull);
                     table.ForeignKey(
                         name: "FK_Punishments_Users_UserId",
                         column: x => x.UserId,
